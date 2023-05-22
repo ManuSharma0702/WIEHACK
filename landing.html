@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="textstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="head">
+        <a href="#" class="brand">ZEAL</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#vision">Vision</a>
+                <a href="#clubs">Clubs</a>
+                <a href="#events">Events</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section " id="souls">
+            <div class="content  ">
+                <h1 class="heading">REJUVENATING SOULS<br></h1>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                <div class="button"><a href="#">LOGIN</a><a href="{% url 'register' %}">SIGN UP</a></div>
+                <img id="soul_image" src="images/RYS1.jpeg" alt="">
+
+            </div>
+
+
+        </section>
+
+        <section class="section" id="vision">
+            <div class="content reveal">
+                
+                <div class="vision_style">
+                    <img id="vision_image" src="images/vision.jpg" alt="">
+                    <div style="margin:65px;">
+                        <h1 class="heading">VISION</h1>
+                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et veniam quam
+                            pariatur voluptatibus delectus minima facilis, consequuntur iusto ex laborum expedita
+                            sapiente quia!</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="clubs">
+            <div class="content reveal">
+                <div class="clubs_style">
+                    <div>
+                <h1 class="heading">Clubs</h1>
+                <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et veniam quam pariatur
+                    voluptatibus delectus minima facilis, consequuntur iusto ex laborum expedita sapiente quia!</p>
+                </div>
+                    <img id="clubs_image" src="images/clubs.jpg" alt="">
+                </div>
+            </div>
+            <!-- <img id="clubs_image" src="images/clubs.jpg" alt=""> -->
+
+        </section>
+        <section class="section" id="events">
+            <div class="content reveal">
+                <h1 class="heading">Events</h1>
+                <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et veniam quam pariatur
+                    voluptatibus delectus minima facilis, consequuntur iusto ex laborum expedita sapiente quia!</p>
+                    
+            </div>
+        </section>
+    </div>
+
+    <footer>
+
+        <div class="foot">
+            <div class="foot_logo"">ZEAL</div>
+        <div class=" foot_head">CONTACT US</div>
+            <div class="media-icons">
+                <a class="icons" href="#"><i class="fab fa-facebook-f" id="fb"></i></a>
+                <a class="icons" href="#"><i class="fab fa-instagram" id="ig"></i></a>
+                <a class="icons" href="#"><i class="fab fa-twitter" id="tw"></i></a>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheigth = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheigth - revealpoint) {
+                    reveals[i].classList.add('active');
+
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
