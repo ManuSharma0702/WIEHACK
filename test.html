@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="textstyle.css">
+    <link rel="stylesheet" href="test.css">
+
+</head>
+<body>
+   <div style="height: 65px;">
+    <header  class="head">
+        <a href="#" class="brand">ZENITH</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#vision">Vision</a>
+                <a href="#clubs">Clubs</a>
+                <a href="#events">Events</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+    </header>
+</div>
+
+    
+    <section class="section_test">
+    <div >
+    <!-- <p style="text-align: center;">Click button to see div.</p> -->
+        <div id="div_test1">
+    <button class="btn_test" onclick="myFunction1()">Members</button>
+
+    <button class="btn_test" onclick="myFunction2()">Schedule</button>
+
+    <button class="btn_test" onclick="myFunction3()">Chat</button>
+
+    <!-- <button class="btn_test" onclick="myFunction4()">Four</button> -->
+            </div>
+  <div id="myDIV1">
+
+    This is the div1 element.
+
+  </div>
+
+  <div id="myDIV2">
+
+    This is the div2 element.
+
+  </div>
+
+  <div id="myDIV3">
+
+    This is the div3 element.
+
+  </div>
+
+  <!-- <div id="myDIV4">
+
+    This is the div4 element.
+
+  </div> -->
+</section>
+
+
+    
+</body>
+<script>
+ 
+
+function myFunction1() {
+
+  document.getElementById("myDIV1").style.display = "block";
+
+  document.getElementById("myDIV2").style.display = "none";
+
+  document.getElementById("myDIV3").style.display = "none";
+
+  document.getElementById("myDIV4").style.display = "none";
+
+}
+
+function myFunction2() {
+
+document.getElementById("myDIV1").style.display = "none";
+
+document.getElementById("myDIV2").style.display = "block";
+
+document.getElementById("myDIV3").style.display = "none";
+
+document.getElementById("myDIV4").style.display = "none";
+
+}
+
+function myFunction3() {
+
+document.getElementById("myDIV1").style.display = "none";
+
+document.getElementById("myDIV2").style.display = "none";
+
+document.getElementById("myDIV3").style.display = "block";
+
+document.getElementById("myDIV4").style.display = "none";
+
+}
+
+function myFunction4() {
+
+document.getElementById("myDIV1").style.display = "none"; 
+
+document.getElementById("myDIV2").style.display = "none";
+
+document.getElementById("myDIV3").style.display = "none";
+
+document.getElementById("myDIV4").style.display = "block";
+
+}
+</script>
+</html>

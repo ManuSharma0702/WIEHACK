@@ -1,0 +1,83 @@
+
+    
+    body{
+        background-image: linear-gradient(to right,#cdffe8, #94b9ff);
+    }
+    #myDIV1 {
+        width: 50vw;
+        height: 50vh;
+        background-color: lightblue;
+        display: none;
+        margin: 20px;
+        text-align: center;
+    }
+
+
+    #myDIV2 {
+        width: 70vw;
+        height: 70vh;
+        background-color: lightblue;
+        display: none;
+        margin: 20px;
+        text-align: center;
+    }
+
+
+    #myDIV3 {
+        width: 70vw;
+        height: 70vh;
+        background-color: lightblue;
+        display: none;
+        margin: 20px;
+        text-align: center;
+    }
+
+
+    #myDIV4 {
+        width: 70vw;
+        height: 70vh;
+        background-color: lightblue;
+        display: none;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .container_test{
+        background-image: linear-gradient(to right,#cdffe8, #94b9ff);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+       
+    }
+
+    .section_test{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn_test{
+        padding: 5px 15px;
+        margin: 5px 10px;
+        /* width: 60px; */
+        background: transparent;
+        border: 0px;
+        transition: 0.5s ease;
+        border-radius: 30px;
+    }
+
+    .btn_test:hover{
+        background-color: #1680AC;
+        
+        cursor: pointer;
+    }
+
+    #div_test1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+ 

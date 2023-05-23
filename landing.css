@@ -79,9 +79,9 @@ header .navigation .navigation-items a:hover:before {
     justify-content: center;
     flex-direction: column;
     /* align-items: center; */
-    padding-top:47px;
+    /* padding-top:47px; */
     padding-left: 95px;
-    height: 100vh;
+    height: 105vh;
   
 }
 
@@ -97,12 +97,12 @@ header .navigation .navigation-items a:hover:before {
     text-align: center;
 }
 
-
-.button{
+ .button{
     margin-top: 50px;
-
+    width: 310px;
+    /* background-color: blue; */
 }
-
+/* 
 .section .content a{
     margin: 10px;
     display: absolute;
@@ -118,9 +118,52 @@ header .navigation .navigation-items a:hover:before {
     border-color: #1680AC;
     transition: 0.5s ease;
 
+} */
+
+/* .section .content a:hover {
+    background-color: #1680AC;
+
+} */
+
+#login_btn{
+    margin: 10px;
+    display: absolute;
+    background: #1680AC;
+    padding: 15px 35px;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1680AC;
+    transition: 0.5s ease;
+
+}
+/* 
+#login_btn:hover {
+    background-color: transparent;
+
+} */
+
+#sign_btn{
+    margin: 10px;
+    display: absolute;
+    background: transparent;
+    padding: 15px 35px;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1680AC;
+    transition: 0.5s ease;
 }
 
-.section .content a:hover {
+#sign_btn:hover {
     background-color: #1680AC;
 
 }
@@ -251,10 +294,10 @@ header .navigation .navigation-items a:hover:before {
 
 .container{
     background-image: linear-gradient(to right,#cdffe8, #94b9ff);
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    
+    /* padding: 20px; */
 }
 
 .content{
@@ -373,9 +416,9 @@ header .navigation .navigation-items a:hover:before {
 
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(50px);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .reveal.active{
@@ -387,11 +430,17 @@ header .navigation .navigation-items a:hover:before {
 
 
 #soul_image{
-    clip-path: circle(60.8% at 86% 18%);
-    position: absolute;
+    clip-path: circle(53.6% at 66% 23%);
+    
     z-index: -1;
-    opacity: 0.7;
-    width: 93.75%;
+    /* opacity: 0.7; */
+    width: 75vw;
+}
+
+.souls_style{
+        display: flex;
+        align-items: center;
+        width: 92.5vw;
 }
 
 #clubs{
@@ -401,14 +450,15 @@ header .navigation .navigation-items a:hover:before {
 
 
 #clubs_image{
-    clip-path:polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path:polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     width: 55vw;
 }
 
 .clubs_style{
     align-items: center;
     display: flex;
-    width: 100vw;
+    width: 92.5vw;
+    gap: 6vw;
 }
 
 #vision_image{
@@ -424,6 +474,7 @@ header .navigation .navigation-items a:hover:before {
     
     position:absolute;
     width: 100%;
+   
 }
 
 .icons{
@@ -483,3 +534,20 @@ header .navigation .navigation-items a:hover:before {
     size: 20px;
 
 } */
+
+
+#event_image{
+    width: 45vw;
+}
+.event_style{
+    display: flex;
+    align-items: center;
+    width: 89vw;
+    /* justify-content: space-between; */
+    gap: 7vw;
+    margin: 20px 0px;
+}
+
+#events{
+    text-align: center;
+}
