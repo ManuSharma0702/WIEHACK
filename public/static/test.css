@@ -1,11 +1,11 @@
 
     
     body{
-        background-image: linear-gradient(to right,#cdffe8, #94b9ff);
+        background: url('images/bg.jpg');
     }
     #myDIV1 {
-        width: 50vw;
-        height: 50vh;
+        width: 70vw;
+        height: 70vh;
         background-color: lightblue;
         display: none;
         margin: 20px;

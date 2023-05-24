@@ -1,4 +1,7 @@
-
+body{
+    background-image: url('/media/images/bg.jpg');
+    /* opacity: 0.5; */
+}
 * {
     margin: 0;
     padding: 0;
@@ -293,7 +296,7 @@ header .navigation .navigation-items a:hover:before {
 
 
 .container{
-    background-image: linear-gradient(to right,#cdffe8, #94b9ff);
+    /* background-image: linear-gradient(to right,#cdffe8, #94b9ff); */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -308,6 +311,7 @@ header .navigation .navigation-items a:hover:before {
     /* align-items: center; */
     width:32vw;
     z-index: 10;
+    color: navajowhite;
 }
 
 #fb{
@@ -467,20 +471,23 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .foot{
-    background-color: black;
+    background-color: #365999;
+    opacity: 0.7;
     height: 35%;
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
     
     position:absolute;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
    
 }
 
 .icons{
     font-size: 2.1em;
-    margin: 0px 5vw;  
-    position: relative;
+    margin: 20px 5vw;  
+    /* position: relative; */
     top: 120px; 
 }
 
@@ -490,20 +497,15 @@ header .navigation .navigation-items a:hover:before {
         position: absolute;
         top: 30px;
         margin: 0px 13vw;
+        display: none;
 }
 
 
 .foot_logo{
    
     color: white;
-    font-size: 5rem;
-    /* text-align: left; */
-    display: flex;
-    position: absolute;
-  
-    left: 13vw;
-    /* align-items: center; */
-    top: 53px;
+    font-size: 4rem;
+    
 }
 /* .section .media-icons a {
     color: grey;
